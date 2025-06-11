@@ -81,7 +81,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(photos/17.png);
+  background-image: url(17.png);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@ h4 {
   left: 1400px;
   height: 60%;
   width: 60%;
-  background-image: url(photos/35.png);
+  background-image: url(35.png);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ h4 {
 }
 
 .image-layer {
-  background-image: url('photos/\ .png'); 
+  background-image: url('.png'); 
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -420,7 +420,7 @@ hr {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(photos/59.png);
+  background-image: url(59.png);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
