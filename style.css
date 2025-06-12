@@ -542,20 +542,190 @@ hr {
   font-size: 10px;
 }
 
-/* ===================== RESPONSIVE STYLES ===================== */
 
-/* Mobile First (phones) */
+/* ======================================================
+   Responsive Styles (Mobile, Tablet, Desktop Adjustments)
+   ====================================================== */
+
+/* ========== Mobile (max-width: 600px) ========== */
 @media screen and (max-width: 600px) {
-  /* styles */
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    padding-right: 20px;
+  }
+
+  .nav li {
+    margin-right: 0;
+    top: 0;
+  }
+
+  .logo img {
+    margin-left: 20px;
+    height: 24px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .vertical {
+    font-size: 1.2rem;
+  }
+
+  #banner .row {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  #banner .item {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+
+  #colors {
+    padding: 0 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #colors h2 {
+    padding-left: 0;
+  }
+
+  #fonts .fonts-content {
+    padding: 0 20px;
+  }
+
+  .fonts-box {
+    height: auto;
+    padding: 20px;
+  }
+
+  #text-style {
+    padding: 80px 20px 40px;
+  }
+
+  .top-heading {
+    top: 100px;
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .text-style-wrapper {
+    padding-top: 100px;
+  }
+
+  #text-style h1 {
+    font-size: 28px;
+  }
+
+  #text-style h3, #text-style h4 {
+    font-size: 18px;
+  }
+
+  #text-style p {
+    font-size: 16px;
+  }
+
+  .text-box1, .text-box2, .text-box3 {
+    padding: 20px;
+  }
+
+  #footer {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  #footer p {
+    font-size: 9px;
+  }
 }
 
-/* Tablets */
+/* ========== Tablet (601px to 1024px) ========== */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* styles */
+  .container {
+    padding: 0 30px;
+  }
+
+  .nav li {
+    margin-right: 20px;
+    top: -20px;
+  }
+
+  .logo img {
+    height: 26px;
+    margin-left: 30px;
+  }
+
+  #banner .row {
+    gap: 60px;
+  }
+
+  #banner .item {
+    width: 180px;
+    height: 350px;
+    padding: 40px;
+  }
+
+  #colors {
+    padding: 0 60px;
+  }
+
+  #fonts .fonts-content {
+    padding: 0 60px;
+  }
+
+  .fonts-box {
+    padding: 30px;
+  }
+
+  #text-style {
+    padding: 100px 40px;
+  }
+
+  .top-heading {
+    top: 120px;
+    left: 40px;
+    font-size: 2rem;
+  }
+
+  #footer {
+    padding: 15px 30px;
+  }
+
+  #footer p {
+    font-size: 10px;
+  }
 }
 
-/* Desktops */
+/* ========== Desktop (1025px and above) ========== */
 @media screen and (min-width: 1025px) {
-  /* optional overrides */
-}
+  /* Optional: enhance layout or spacing for large screens */
+  .container {
+    max-width: 1440px;
+  }
 
+  #colors {
+    padding: 0 100px;
+  }
+
+  #fonts .fonts-content {
+    padding: 0 100px;
+  }
+
+  #text-style {
+    padding: 120px 60px 80px;
+  }
+
+  .top-heading {
+    font-size: 2.5rem;
+  }
+}
