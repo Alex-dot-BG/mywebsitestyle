@@ -542,3 +542,20 @@ hr {
   font-size: 10px;
 }
 
+/* ===================== RESPONSIVE STYLES ===================== */
+
+/* Mobile First (phones) */
+@media screen and (max-width: 600px) {
+  /* styles */
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* styles */
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+  /* optional overrides */
+}
+
