@@ -144,7 +144,6 @@ h4 {
   overflow: hidden;
 }
 
-/* COLORS & TEXT STYLE default background (same as above) */
 #banner #colors-row,
 #banner #text-row {
   background-color: rgba(182, 197, 233, 1);
@@ -155,7 +154,6 @@ h4 {
   background-color: #F5AEAA;
 }
 
-/* FONTS ITEM: reverse the scheme */
 #banner #fonts-row {
   background-color: #F5AEAA;
 }
@@ -165,8 +163,7 @@ h4 {
 }
 
 .vertical span {
-  opacity: 0.8s;
-  transition: opacity 0.3s ease, transform 0.3s ease
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 #banner .item:hover .vertical span {
@@ -196,7 +193,6 @@ h4 {
   scroll-snap-align: start;
   text-align: center;
   z-index: 0;
-
 }
 
 #colors::before {
@@ -215,12 +211,10 @@ h4 {
   pointer-events: none;
 }
 
-/* Targeting direct children of the #colors*/
 #colors > * {
   position: relative;
   z-index: 1;
 }
-
 
 #colors .row {
   display: flex;
@@ -233,7 +227,6 @@ h4 {
 
 #colors .item {
   width: 250px;
-  height: auto;
   border-radius: 30px;
   overflow: hidden;
   text-align: center;
@@ -242,15 +235,12 @@ h4 {
   padding: 20px;
 }
 
-
 .color-box {
   height: 150px;
   width: 250px;
   gap: 80px;
   border-radius: 8px;
-  
 }
-
 
 #colors h2 {
   padding-bottom: 0px;
@@ -261,9 +251,7 @@ h4 {
   position: relative;
 }
 
-
 /* === FONTS SECTION == */
-
 
 #fonts {
   position: relative;
@@ -290,7 +278,7 @@ h4 {
 }
 
 .image-layer {
-  background-image: url('.png'); 
+  background-image: url('1.png');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -311,7 +299,6 @@ h4 {
   color: #2E1C0E;
 }
 
-
 #fonts .row {
   display: flex;
   flex-wrap: wrap;
@@ -320,24 +307,17 @@ h4 {
   margin: 40px;
 }
 
-
 #fonts h2 {
-  padding-bottom: 0px;
   font-size: 2.5rem;
   font-weight: 400;
-  align-self: center;
   padding-left: 30px;
   position: relative;
   bottom: 90px;
 }
 
-
 .fonts-box {
   width: 100%;
   max-width: 600px;
-  min-width: 200px;
-  height: 200px;
-  min-height: auto;
   padding: 12px 40px 40px 40px;
   border-radius: 30px;
   box-shadow: 0 10px 12px rgba(0,0,0,0.1);
@@ -347,72 +327,56 @@ h4 {
 
 hr {
   width: 400px;
-  min-width: none;
 }
 
 .font-alata {
   font-family: 'Alata', sans-serif;
-  font-weight: normal;
   font-size: 30px;
 }
-
 .font-poppins {
   font-family: 'Poppins', sans-serif;
-  font-weight: normal;
   font-size: 30px;
 }
-
 .font-oswald {
   font-family: 'Oswald', sans-serif;
-  font-weight: normal;
   font-size: 30px;
 }
-
 .font-josefin-sans {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: normal;
   font-size: 30px;
 }
-
 .font-playfair {
   font-family: 'Playfair Display', serif;
-  font-weight: 100;
   font-size: 20px;
 }
-
 .font-lora {
   font-family: 'Lora', sans-serif;
-  font-weight: 100;
   font-size: 20px;
 }
-
 .font-garamond {
   font-family: 'EB Garamond', sans-serif;
   font-size: 22px;
 }
-
 .font-nunito {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
 }
-
 
 /* === TEXT STYLE SECTION === */
 
 #text-style {
   position: relative;
   min-height: 100vh;
-  padding: 120px 60px 80px; /* top padding gives room for h2 */
+  padding: 120px 60px 80px;
   scroll-snap-align: start;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* this centers child flex items horizontally */
+  align-items: center;
   justify-content: flex-start;
   background: transparent;
 }
 
-/* BACKGROUND IMAGE */
 #text-style::before {
   content: '';
   position: absolute;
@@ -428,7 +392,6 @@ hr {
   z-index: -1;
 }
 
-/* h2 in top-left */
 .top-heading {
   position: absolute;
   top: 140px;
@@ -441,7 +404,6 @@ hr {
   z-index: 2;
 }
 
-/* wrapper holds the main content centered */
 .text-style-wrapper {
   display: flex;
   flex-direction: column;
@@ -460,7 +422,6 @@ hr {
   text-align: center;
 }
 
-/* Typography */
 #text-style h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 40px;
@@ -482,12 +443,8 @@ hr {
 #text-style p {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  font-weight: normal;
-
-
 }
 
-/* Boxes */
 .text-box1,
 .text-box2,
 .text-box3 {
@@ -515,22 +472,19 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
   gap: 60px;
   margin-bottom: 40px;
 }
 
 /* === FOOTER SECTION === */
-
-/* Make footer fixed at the bottom */
 #footer {
   width: 100%;
   border-top: 0.8px solid #68645A;
   padding: 20px 60px;
   text-align: left;
   background: transparent;
-  position: fixed; 
-  bottom: 0;        
+  position: fixed;
+  bottom: 0;
   left: 0;
   z-index: 10;
   box-sizing: border-box;
@@ -542,190 +496,37 @@ hr {
   font-size: 10px;
 }
 
-
-/* ======================================================
-   Responsive Styles (Mobile, Tablet, Desktop Adjustments)
-   ====================================================== */
-
-/* ========== Mobile (max-width: 600px) ========== */
+/* Responsive Styles */
 @media screen and (max-width: 600px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px;
-    padding-right: 20px;
-  }
-
-  .nav li {
-    margin-right: 0;
-    top: 0;
-  }
-
-  .logo img {
-    margin-left: 20px;
-    height: 24px;
-    margin-top: 20px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  .vertical {
-    font-size: 1.2rem;
-  }
-
-  #banner .row {
-    gap: 30px;
-    flex-direction: column;
-  }
-
-  #banner .item {
-    width: 80%;
-    height: auto;
-    padding: 30px;
-  }
-
-  #colors {
-    padding: 0 30px;
-    align-items: center;
-    text-align: center;
-  }
-
-  #colors h2 {
-    padding-left: 0;
-  }
-
-  #fonts .fonts-content {
-    padding: 0 20px;
-  }
-
-  .fonts-box {
-    height: auto;
-    padding: 20px;
-  }
-
   #text-style {
     padding: 80px 20px 40px;
   }
-
   .top-heading {
-    top: 100px;
-    left: 20px;
+    position: static;
+    margin-bottom: 20px;
     font-size: 1.5rem;
-  }
-
-  .text-style-wrapper {
-    padding-top: 100px;
-  }
-
-  #text-style h1 {
-    font-size: 28px;
-  }
-
-  #text-style h3, #text-style h4 {
-    font-size: 18px;
-  }
-
-  #text-style p {
-    font-size: 16px;
-  }
-
-  .text-box1, .text-box2, .text-box3 {
-    padding: 20px;
-  }
-
-  #footer {
-    padding: 10px 20px;
     text-align: center;
   }
-
-  #footer p {
-    font-size: 9px;
+  .text-style-wrapper {
+    padding-top: 20px;
+    gap: 20px;
+  }
+  #text-style h1 { font-size: 2rem; }
+  #text-style h3 { font-size: 1.2rem; }
+  #text-style h4 { font-size: 1rem; }
+  #text-style p { font-size: 1rem; line-height: 1.5; }
+  .text-box1,
+  .text-box2,
+  .text-box3 {
+    width: 100%;
+    padding: 20px;
   }
 }
 
-/* ========== Tablet (601px to 1024px) ========== */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    padding: 0 30px;
-  }
-
-  .nav li {
-    margin-right: 20px;
-    top: -20px;
-  }
-
-  .logo img {
-    height: 26px;
-    margin-left: 30px;
-  }
-
-  #banner .row {
-    gap: 60px;
-  }
-
-  #banner .item {
-    width: 180px;
-    height: 350px;
-    padding: 40px;
-  }
-
-  #colors {
-    padding: 0 60px;
-  }
-
-  #fonts .fonts-content {
-    padding: 0 60px;
-  }
-
-  .fonts-box {
-    padding: 30px;
-  }
-
-  #text-style {
-    padding: 100px 40px;
-  }
-
-  .top-heading {
-    top: 120px;
-    left: 40px;
-    font-size: 2rem;
-  }
-
-  #footer {
-    padding: 15px 30px;
-  }
-
-  #footer p {
-    font-size: 10px;
-  }
+  /* Add tablet-specific tweaks here if needed */
 }
 
-/* ========== Desktop (1025px and above) ========== */
 @media screen and (min-width: 1025px) {
-  /* Optional: enhance layout or spacing for large screens */
-  .container {
-    max-width: 1440px;
-  }
-
-  #colors {
-    padding: 0 100px;
-  }
-
-  #fonts .fonts-content {
-    padding: 0 100px;
-  }
-
-  #text-style {
-    padding: 120px 60px 80px;
-  }
-
-  .top-heading {
-    font-size: 2.5rem;
-  }
+  /* Add large screen-specific tweaks here if needed */
 }
